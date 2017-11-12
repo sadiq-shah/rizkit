@@ -1,0 +1,256 @@
+#root{
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+/*Nav Styling*/
+  .top-navbar > li > a
+  {
+    padding-bottom: 0px !important;
+  }
+/*End Nav Styling*/
+
+
+/*job tab*/
+  .job-tab{
+    border: 2px solid #ddd;
+    height: 120px;
+  }
+  .job-tab-img{
+    width: 100% !important; 
+    height: 85%;
+  }
+ 
+/*End job tab*/
+.job__company{
+     font-weight: bold;
+     font-size: 17px;
+}
+.job-location-plus-icon{
+	text-indent: 25px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+.trending-single-job{
+	border-right: 1px solid #eee;
+	padding-top: 25px;
+	/*padding-bottom: 5px;*/
+  background-color: whitesmoke;
+  /*border-bottom: 15px solid white;*/
+   margin-bottom: 20px;
+}
+.trending-single-job:hover{
+	background-color: white;
+}
+
+
+.job-listing.job-listing--featured
+{	
+	padding-top: 0px;
+}
+
+.job-listing.job-listing--featured:hover
+{
+  background-color: white !important;
+}
+#job-nav > li > a{
+	padding: 30px 17px !important;
+	font-size: 15px;
+}
+#job-nav > li > a:hover{
+  color: black;
+}
+#listing-nav-jobs{
+	margin-top: 80px;
+	background-color: white !important;
+}
+ul.jobsWithNumbers > li{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+ul.jobsWithNumbers > li > a{
+	color: #424242;
+}
+ul.jobsWithNumbers > li > a:hover{
+	text-decoration: none;
+	color: #ff7473;
+	font-weight: bold;
+}
+/*#job-nav > li:hover{
+	background-color: white;
+}*/
+nav.nav-tabs{
+	min-height: 0px !important;
+}
+
+
+li.active-tab, #job-nav > li:hover{
+ 	background-color: white;
+ 	border: 1px solid #ddd;
+ }
+
+/*Job Tabs*/
+.nav {
+	box-sizing: border-box !important; 
+}
+.job-tabs{
+ 	background-color: #746EA9;
+ 	box-sizing: border-box;
+ }
+ .job-tabs > li.active{
+ 	border-top: 10px solid black;
+ }
+ .nav-tabs>li>a
+ {
+ 	/*margin-right: 0px !important;*/
+ }
+ .job-tabs > li.active{
+ 	margin-left: 0px !important;
+ }
+ .job-tabs > li > a{
+ 	padding: 25px 20px 25px 20px;
+ 	font-size: 25px;
+ }
+/*End Job Tabs*/
+
+    .nav-tabs{
+      background-color: blue !important;
+    }
+    .nav-tabs ul.nav>li.active>a, .nav-tabs ul.nav>li.open>a{
+      border-top: 5px solid  white !important;
+      /*color: black;*/
+    }
+
+    .nav-tabs  ul.nav>li>a:hover, .nav-tabs ul.nav>li.open>a:hover{
+      border-top: 5px solid  white !important;
+    }
+
+@media screen and (min-width: 769px)
+{
+    .trending-single-job:nth-child(1), 
+    .trending-single-job:nth-child(2),
+    .trending-single-job:nth-child(3)
+    {
+    	padding-top: 35px;
+    }
+    .job-listing.job-listing--featured
+    {
+    	border-bottom: 1px solid #eee;
+    }	
+
+    .first-job-col, .second-job-col, .third-job-col{
+      border-left: 5px solid #ff7473;
+
+    }
+
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .trending-single-job:nth-child(1), 
+    .trending-single-job:nth-child(2)
+    {
+    	padding-top: 35px;
+    } 	
+    .trending-single-job{
+	   padding-bottom: 40px;
+     }
+}
+
+@media screen and (max-width: 368px)
+{
+	.trending-single-job{
+	   padding-bottom: 30px;
+     }
+}
+
+
+
+/*Styling On Button*/
+#style-switch-button{ 
+   position:fixed;
+   top: 330px;
+   left:0;
+   border-radius:0;
+   z-index:2
+}
+
+#style-facebook-button{ 
+   position:fixed;
+   top:190px;
+   left:0;
+   border-radius:0;
+   z-index:2;
+   width: 55px;
+}
+#style-twitter-button
+{
+	position: fixed;
+	top:260px;
+	left:0;
+    border-radius:0;
+    z-index:2
+}
+.bglight-blue {
+    background-color: #3b5998;
+    color: white;
+}
+.bglight-blue:hover{
+    background-color: white;
+    color: #3b5998;	
+    border: 2px solid #3b5998;
+}
+.bglight-blue-twitter{
+	background-color: #55acee;
+	color: white;
+	border: 2px solid #55acee;
+}
+.bglight-blue-twitter:hover{
+	background-color: white;
+	color: #55acee;
+}
+
+
+
+/*FontStyling*/
+
+.font-18{
+	font-size: 18px;
+}
+.font-16{
+	font-size: 16px;
+	white-space: nowrap;
+}
+
+
+/*Hover Master*/
+
+/* Overline From Left */
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;	
+}
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #ff7473;
+  height: 8px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+  right: 0;
+}
